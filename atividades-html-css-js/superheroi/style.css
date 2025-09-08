@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+td, th{
+    border: 1px solid black;
+    margin: 3px;
+}
+header{
+    background-color:yellow;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+p{
+    text-align: left;
+}
+footer > p{
+    text-align: center;
+}
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
