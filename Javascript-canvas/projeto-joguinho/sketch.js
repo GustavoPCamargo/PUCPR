@@ -75,12 +75,6 @@ function desenhar(bola) {
   if (keyIsDown(LEFT_ARROW)){
     bola.angle -=3 * s
   }
-  if (bola.x === width){
-      bola.x = 250
-      }
-  if (bola.y === height){
-    bola.y = 250
-  }
 }
 function desenhar2(bola) {
   fill(bola.color.fill);
@@ -106,8 +100,6 @@ function andar(bola, s) {
 function draw() {
   const s = deltaTime / 1000;
   background(220);
-//  pontos(20, 10, 5)
-//  pontos(610, 10, 10)
   desenhar(obj);
   desenhar2(obj2)
   desenhar3(obj3, obj, obj2)
