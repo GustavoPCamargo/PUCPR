@@ -3,7 +3,7 @@ const btnTamanho = document.getElementById("btnTamanho")
 const foto = document.getElementById("foto")
 
 btnEsconder.addEventListener("click", function(){
-    if (btnEsconder){
+    if (btnEsconder == true){
         foto.style.display("none")
         btnEsconder.style.textcontent("mostrar")
     }

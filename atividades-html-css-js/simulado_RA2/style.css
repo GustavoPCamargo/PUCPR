@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container img {
+  width: 250px;
+  border: 6px solid red; /* borda inicial */
+  border-radius: 10px;
+  transition: all 0.4s ease; /* transição suave */
+}
+
+/* Classe alternada */
+.container img.borda-alternada {
+  border: 8px dashed blue; /* tipo e cor de borda diferentes */
+  border-radius: 30px;     /* muda o arredondamento também */
+}
