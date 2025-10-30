@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+div#msg{
+  background-color: black;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+.container img {
+  width: 250px;
+  border: 5px solid black;
+  transition: all 0.3s ease;
+}
+
+.fonte-alternada {
+  font-family: 'Courier New', monospace;
+  color: #0077cc;
+}
