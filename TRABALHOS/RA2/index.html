@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Usuário</h1>
+    <form id="cadastroForm">
+      <label>Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+      <small class="erro" id="erroNome"></small>
+
+      <label>E-mail:</label>
+      <input type="email" id="email" placeholder="exemplo@email.com" required>
+      <small class="erro" id="erroEmail"></small>
+
+      <label>Senha:</label>
+      <input type="password" id="senha" placeholder="Mínimo 8 caracteres" required>
+      <small class="erro" id="erroSenha"></small>
+
+      <label>Confirmar senha:</label>
+      <input type="password" id="confirmaSenha" placeholder="Repita a senha" required>
+      <small class="erro" id="erroConfirmaSenha"></small>
+
+      <label>Data de nascimento:</label>
+      <input type="date" id="dataNasc" required>
+
+      <label>Telefone (opcional):</label>
+      <input type="text" id="telefone" placeholder="(99) 99999-9999">
+
+      <div class="checkbox">
+        <input type="checkbox" id="termos">
+        <label for="termos">Aceito os termos de uso</label>
+      </div>
+      <small class="erro" id="erroTermos"></small>
+
+      <button type="submit" id="btnSalvar" disabled>Salvar</button>
+    </form>
+
+    <h2>
+        Usuários Cadastrados
+    </h2>
+    <ul id="listaUsuarios"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
