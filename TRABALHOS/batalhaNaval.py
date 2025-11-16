@@ -31,6 +31,13 @@ matrizViewComp = [
     ["#"]*10
 ]
 
+def resetarTabuleiros():
+    global matriz, matrizComp, matrizview, matrizViewComp
+    matriz = [["#"]*10 for _ in range(5)]
+    matrizComp = [["#"]*10 for _ in range(5)]
+    matrizview = [["#"]*10 for _ in range(5)]
+    matrizViewComp = [["#"]*10 for _ in range(5)]
+
 def colorir(matriz):
     for linha in matriz:
         linha_colorida = []
@@ -45,15 +52,14 @@ def colorir(matriz):
                 linha_colorida.append(elemento)
         print(" ".join(linha_colorida))
 
-def posComp ():
-    for i in range(5):
+def posComp():
+    colocados = 0
+    while colocados < 5:
         linha = random.randint(1, 5) - 1
         coluna = random.randint(1, 10) - 1
-        matrizComp[linha][coluna] = "X"
-    while matriz[linha][coluna] == "X":
-        linha = random.randint(1, 5) - 1
-        coluna = random.randint(1, 10) - 1
-        matrizComp[linha][coluna] = "X"
+        if matrizComp[linha][coluna] != "X":
+            matrizComp[linha][coluna] = "X"
+            colocados += 1
     
 
 def posPlayer ():
@@ -134,8 +140,9 @@ def ataquePlayer():
 
 def jogo ():
     começo = 1
-    terminarJogo = False
-    while começo == 1: 
+    while começo == 1:
+        terminarJogo = False
+        resetarTabuleiros() 
         print("Bem vindo ao jogo de batalha naval do Gustavo cray cray")
         posPlayer()
         posComp()
@@ -144,16 +151,16 @@ def jogo ():
         colorir(matrizview)
         while terminarJogo == False:
             ataquePlayer()
-            contPlayer = 5 - (matrizview[0].count("X") + matrizview[1].count("X") + matrizview[2].count("X") + matrizview[3].count("X") + matrizview[4].count("X"))
-            print(f"\n {contPlayer} Embarcações inimigas restantes\n")
+            naviosComp = 5 - sum(linha.count("X") for linha in matrizview)
+            print(f"\n {naviosComp} Embarcações inimigas restantes\n")
             ataqueComp()
-            contComp = 5 - (matrizViewComp[0].count("X") + matrizViewComp[1].count("X") + matrizViewComp[2].count("X") + matrizViewComp[3].count("X") + matrizViewComp[4].count("X"))
-            print(f"\n {contComp} Embarcações aliadas restantes")
-            if contPlayer == 0:
+            naviosPlayer = 5 - sum(linha.count("X") for linha in matrizViewComp)
+            print(f"\n {naviosPlayer} Embarcações aliadas restantes")
+            if naviosComp == 0:
                 print("Parabéns você ganhou do computador :)")
                 terminarJogo = True
-            if contComp == 0:
+            if naviosPlayer == 0:
                 print("Que pena o computador venceu :(")
-                terminarJogo == True
+                terminarJogo = True
         começo = int(input("\nQuer jogar novamente?\n1. Sim\n2. Não\n Digite o número da opção: "))
 jogo()
