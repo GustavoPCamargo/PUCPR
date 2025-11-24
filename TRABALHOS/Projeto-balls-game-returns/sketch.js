@@ -149,8 +149,8 @@ class Moeda {
 class PowerUp {
   constructor(type) {
     this.type = type;
-    this.x = random(50, width - 50);
-    this.y = random(80, height - 50);
+    this.x = random(40, width - 40);
+    this.y = random(40, height - 40);
     this.r = 18;
     this.anim = random(0, TWO_PI);
   }
@@ -298,7 +298,7 @@ class Game {
 
     textSize(20);
     text("Criado por: Gustavão cray cray", width / 2, 200);
-    text("Um dos jogos mais esperados deste ano retorna \nmaior, melhor e mais forte, concorrente a GOTY\n BALLS GAME\n feito para um projeto da PUCPR", width / 2, 240);
+    text("\nUm dos jogos mais esperados deste ano retorna \nmaior, melhor e mais forte, concorrente a GOTY\n BALLS GAME\n feito para um projeto da PUCPR", width / 2, 240);
 
     textSize(18);
     text("Pressione ENTER para voltar", width / 2, 380);
