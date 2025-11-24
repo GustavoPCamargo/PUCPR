@@ -298,7 +298,7 @@ class Game {
 
     textSize(20);
     text("Criado por: Gustavão cray cray", width / 2, 200);
-    text("Um jogo de nazezinhas pegando pontos e power-ups, feito para um projeto da PUCPR", width / 2, 240);
+    text("Um dos jogos mais esperados deste ano retorna \nmaior, melhor e mais forte, concorrente a GOTY\n BALLS GAME\n feito para um projeto da PUCPR", width / 2, 240);
 
     textSize(18);
     text("Pressione ENTER para voltar", width / 2, 380);
