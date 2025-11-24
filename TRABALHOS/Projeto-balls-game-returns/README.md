@@ -105,4 +105,4 @@ Mostra a pontuação dos jogadores. Pressione **ENTER** para voltar ao menu.
 ---
 ## Video (Teste De Autoria)
 
-* 
+* https://youtu.be/I_LKc4_kncU
