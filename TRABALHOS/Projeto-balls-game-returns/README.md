@@ -75,7 +75,7 @@ Toque no power-up para ativá-lo.
 
 * `moeda.mp3` → quando uma moeda é coletada
 * `powerup.mp3` → quando um power-up é ativado
-* `musica.mp3` → música de fundo (toca automaticamente ao clicar na tela)
+* `musica.mp3` → fica em loop durante o jogo
 
 ---
 
@@ -90,6 +90,8 @@ Mostra a pontuação dos jogadores. Pressione **ENTER** para voltar ao menu.
 * Caso algum asset não carregue, revise os nomes dos arquivos.
 * Certifique-se de que está usando apenas uma versão do p5.js no index.html.
 
+---
+
 ## Referências
 
 * Imagem de fundo: https://www.vecteezy.com
@@ -99,3 +101,8 @@ Mostra a pontuação dos jogadores. Pressione **ENTER** para voltar ao menu.
 * Sound Effects: https://pixabay.com
 
 * Música de fundo: M.O.O.N. – Crystals (Hotline Miami Soundtrack)
+
+---
+## Video (Teste De Autoria)
+
+* 
