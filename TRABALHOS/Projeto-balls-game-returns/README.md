@@ -1,5 +1,9 @@
 # README
 
+## Participante
+
+* Gustavo Palkowski Camargo
+
 ## Como executar o projeto
 
 1. Certifique-se de que todos os arquivos do jogo estejam na mesma pasta:
