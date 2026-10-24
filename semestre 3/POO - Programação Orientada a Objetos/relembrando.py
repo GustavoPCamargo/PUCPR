@@ -20,3 +20,5 @@ def lista_aleatoria (lista, tamanho):
 
 
 print(lista_aleatoria(lista,tamanho))
+
+
